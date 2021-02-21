@@ -21,8 +21,8 @@ jeito mais preciso(talvez uma melhoria seria um que atualiza apos cada calculo e
 
 Exemplos de codigo (certas opcoes teriam que adicionar na funcao diretamente):
 
-for T in Temperaturas:
-    listaMi, listaDelta = calcularDelta_MI([1, 1.1, 1.2], J, s0, t1, t2, t3, t4, T, Divisoes) 
+    for T in Temperaturas:
+        listaMi, listaDelta = calcularDelta_MI([1, 1.1, 1.2], J, s0, t1, t2, t3, t4, T, Divisoes) 
 
 #2D para n = 1:
     
@@ -30,6 +30,7 @@ for T in Temperaturas:
     # O ultimo true é pq alem de salvar, ira mostrar o plot na tela
 
 #3D:
+
     plot3D('wireframe', N, J, Mi, 'n', 'J', 'μ', 'μ em T = ' + str(T) + 'K')
     plot3D('curvas', N, J, Delta, 'n', 'J', 'Δ', 'Δ em T = ' + str(T) + 'K', 50)
     plotDensityPlot(N, J, Delta, 'n', 'J', 'Δ')
