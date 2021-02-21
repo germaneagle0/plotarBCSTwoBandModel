@@ -69,7 +69,7 @@ class Tempo:
         except:
             self.plot[name] = 0
 
-        self.fim('Plot ' + str(self.plot), boolean)
+        self.fim('Plot ' + str(self.plot[name]), boolean)
 
     def fimCalculo(self, boolean = False):
         self.calculo += 1
