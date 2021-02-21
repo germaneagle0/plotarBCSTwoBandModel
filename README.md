@@ -19,16 +19,17 @@ precisos. O segundo tempo é so o primeiro multiplicado por um fator de correç�
 por exemplo uma serie de N, para um dado J. E ai multiplica pelo numero de J, e tambem o numero de particoes da temperatura. Não é o 
 jeito mais preciso(talvez uma melhoria seria um que atualiza apos cada calculo e ai talvez mostre 'tempo previsto ate termino')
 
-Exemplos de codigo (certas opcoes teriam que adicionar na funcao diretamente)
+Exemplos de codigo (certas opcoes teriam que adicionar na funcao diretamente):
 
 for T in Temperaturas:
     listaMi, listaDelta = calcularDelta_MI([1, 1.1, 1.2], J, s0, t1, t2, t3, t4, T, Divisoes) 
 
 #2D para n = 1:
     
-    plot2D(listaJ, listaMi, 'J', 'μ', 'Grafico relacionando J e μ em T = ' + str(T) + 'K', False, 0, [0,2], True) # O ultimo true é pq alem de salvar, ira mostrar o plot na tela
+    plot2D(listaJ, listaMi, 'J', 'μ', 'Grafico relacionando J e μ em T = ' + str(T) + 'K', False, 0, [0,2], True) 
+    # O ultimo true é pq alem de salvar, ira mostrar o plot na tela
 
-#3D
+#3D:
     plot3D('wireframe', N, J, Mi, 'n', 'J', 'μ', 'μ em T = ' + str(T) + 'K')
     plot3D('curvas', N, J, Delta, 'n', 'J', 'Δ', 'Δ em T = ' + str(T) + 'K', 50)
     plotDensityPlot(N, J, Delta, 'n', 'J', 'Δ')
