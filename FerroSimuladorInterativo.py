@@ -164,7 +164,8 @@ def main():
     # Imprimir previsão de tempo de calculo
     preverTempoDeCalculo(Numero, EnergiaJ, s0, t1, t2, t3, t4, Temperaturas, Divisoes)
 
-    # Lista contendo todos calculos feitos, caso queira calcular primeiro, depois mostrar
+    # Lista contendo todos calculos feitos, caso queira calcular primeiro, depois mostrar, talvez queira usar sua transposta(com np.array(Deltas) pode usar Deltas.transpose())
+
     Deltas = []
     Mis = []
 
